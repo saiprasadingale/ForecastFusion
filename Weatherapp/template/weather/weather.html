@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Information</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add custom styles here if needed */
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-4">Weather Information for {{ city }}</h1>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Temperature</th>
+                            <td>{{ temperature }} °C</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Feels Like</th>
+                            <td>{{ feels_like }} °C</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Min Temperature</th>
+                            <td>{{ temp_min }} °C</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Max Temperature</th>
+                            <td>{{ temp_max }} °C</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Pressure</th>
+                            <td>{{ pressure }} hPa</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Humidity</th>
+                            <td>{{ humidity }}%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Visibility</th>
+                            <td>{{ visibility }} meters</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wind Speed</th>
+                            <td>{{ wind_speed }} m/s</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wind Direction</th>
+                            <td>{{ wind_deg }}°</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cloudiness</th>
+                            <td>{{ clouds_all }}%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>{{ description }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sunrise</th>
+                            <td>{{ sunrise }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sunset</th>
+                            <td>{{ sunset }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Country</th>
+                            <td>{{ country }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Timezone</th>
+                            <td>{{ timezone }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
